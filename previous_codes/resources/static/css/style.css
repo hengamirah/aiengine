@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.preview img {
+    border: 2px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.detection-box {
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+}
+
+.result-card {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.spinner-border {
+    animation: spinner-border 0.75s linear infinite;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.progress {
+  height: 10px;
+  margin-bottom: 0.5rem;
+}
+
+#name-decision-badge {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Results section styling */
+.result-image {
+    max-height: 300px;
+    object-fit: contain;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+.comparison-result {
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.comparison-result.match {
+    background-color: rgba(25, 135, 84, 0.1);
+    border: 1px solid rgba(25, 135, 84, 0.25);
+}
+
+.comparison-result.no-match {
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.25);
+}
+
+.detection-box {
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
